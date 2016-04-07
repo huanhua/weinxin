@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>投资详情</title>
+        <script type="text/javascript">
+            var iScale = 1;
+            iScale = iScale/window.devicePixelRatio;
+            document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale='+ iScale +', maximum-scale='+ iScale +', minimum-scale='+ iScale +'" />');
+            window.onload = window.onresize = function(){
+                    var oHtml = document.getElementsByTagName('html')[0];
+                    var iWidth = document.documentElement.clientWidth;
+                    oHtml.style.fontSize = iWidth/10+'px';
+            }
+    </script>
+    </head>
+    <body>
+            <!--<header class="header">
+                    <div class="back f-left">
+                            <a href="#">
+                                <img src="images/icon/Back-Arrow.png"/>
+                            </a>
+                    </div>
+                    <div class="f-left header-text">投资详情</div>
+            </header>-->
+            <div class="sectiond border-bottom">
+                <div style="position:relative;">
+                     <div id="xiangqing"></div>
+                     <span style="color:#ff6600; position:absolute; top:2.4rem; left:5.6rem; font-size:0.33rem;">%</span>
+                     <span style="color:#333333; position:absolute; top:1.3rem; left:4.32rem; font-size:0.32rem;"> 年化收益</span>
+                     <span style="color:#333333; position:absolute; top:3.1rem; left:3.85rem; font-size:0.37333rem;">投资期限45天</span>
+                </div>
+                <ul class="j-introduce">
+                    <li>满标计息</li>
+                    <li>项目进度：75%</li>
+                    <li>灵活转让</li>
+                </ul>
+            </div>
+            <div class="sectiond-one border-top">
+                <ul class="over-hidden">
+                    <li>
+                        <span class="f-left">可投金额</span><span class="f-right">34,500.00元</span>
+                    </li>
+                    <li>
+                        <span class="f-left">项目名称</span>
+                        <div class="f-right" style="width:4.2rem;">
+                            <span class="f-left">微银宝(1月期)-0129</span>
+                            <span class="f-right" style="padding-top:0.49rem;">
+                                <img src="images/icon/chedi.png"/>
+                            </span>
+                        </div>
+                    </li>
+                    <li><span class="f-left">还款方式</span><span class="f-right">先息后本</span></li>
+                    <li><span class="f-left">项目详情</span><span class="f-right" style="padding-top:0.4rem;"><img src="images/icon/Arrow-right.png"></span></li>
+                </ul>
+            </div>
+    </body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/assets.min.js"></script>
+<script type="text/javascript" src="js/touzixiangqing.js"></script>
